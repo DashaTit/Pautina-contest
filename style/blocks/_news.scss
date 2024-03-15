@@ -1,0 +1,60 @@
+.news {
+    margin-top: 200px;
+}
+
+h1 {
+    @include openSans($black, 700, 48px);
+    margin-bottom: 100px;
+}
+
+.news__card {
+    @include newsCard(920px);
+    margin-right: 10px;
+}
+
+.date {
+    @include openSans($light-grey, 700, 16px);
+}
+
+.card-2 {
+    @include newsCard(450px)
+}
+
+.news__card_main-text {
+    @include openSans($black, 600, 20px);
+}
+
+button {
+    margin-top: 26px;
+    @include whiteBtn();
+}
+
+.news__line-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__see-all {
+    height: 480px;
+    width: 450px;
+    background-color: $blue;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+    border: 2px $blue solid;
+
+    p {
+        width: 220px;
+        @include openSans($white, 700, 26px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+        background-color: $white;
+        p {
+            color: $blue;
+        }
+    }
+}

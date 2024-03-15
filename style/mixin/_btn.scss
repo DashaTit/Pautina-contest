@@ -1,0 +1,23 @@
+@mixin blueBtn() {
+    padding: 20px 46px;
+    background-color: $blue;
+    @include openSans($white, 600, 24px);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: $blue * 0.75;
+    }
+}
+
+@mixin whiteBtn() {
+    padding: 10px 36px;
+    border: 2px $blue solid;
+    border-radius: 5px;
+    @include openSans($blue, 600, 24px);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}

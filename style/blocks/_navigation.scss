@@ -1,0 +1,122 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+    width: 100%;
+}
+
+//NAV UP
+
+.nav__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nav__item {
+    @include openSans($black, 600, 20px);
+}
+
+.nav__logo {
+    a {
+        display: flex;
+        width: 400px;
+        justify-content: space-between;
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        span {
+            h3 {
+                @include openSans($black, 600, 20px);
+            }
+    
+            p {
+                @include openSans($black, 400, 16px);
+            }
+        }
+    }
+}
+
+.nav__item__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__line {
+    height: 1px;
+    width: 100%;
+    background-color: $black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+// NAV DOWN
+
+.nav__down {
+    display: flex;
+    justify-content: start;
+    @include openSans($black, 600, 24px);
+}
+
+.nav__links-item {
+    margin-right: 60px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+//MEDIA QUERY
+
+@media screen and (max-width: 801px) {
+    .nav__item {
+        @include openSans($black, 600, 16px);
+    }
+
+
+    .nav__logo {
+        a {
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+    
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+    
+            span {
+                h3 {
+                    @include openSans($black, 600, 16px);
+                }
+        
+                p {
+                    @include openSans($black, 400, 12px);
+                }
+            }
+        }
+    }
+
+    .nav__down {
+        display: flex;
+        justify-content: start;
+        @include openSans($black, 600, 16px);
+    }
+
+    .nav__links-item {
+        margin-right: 30px;
+        transition: all 0.3s ease-in-out;
+    
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+

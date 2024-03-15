@@ -1,0 +1,177 @@
+.systems {
+    background-color: $grey;
+    margin-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.systems__section-flex {
+    display: flex;
+}
+
+.systems__login, .data_base, .systems__documentation, .systems__question, .systems__signup {
+    display: none;
+}
+
+
+.systems__sidebar {
+    ul {
+        li {
+            background-color: $white;
+            padding: 30px;
+            @include openSans($dark-grey, 600, 24px);
+            border: 2px $blue solid;
+            border-bottom: transparent;
+            transition: all 0.3s ease-in-out;
+            &:last-child {
+                border-bottom: 2px $blue solid;
+            }
+
+            &:hover {
+                @include openSans($black, 600, 24px);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.systems__signup.active {
+    background-color: $white;
+    display: block;
+    padding: 40px 57px;
+    border: 2px $black solid;
+    @include openSans($black, 600, 20px);
+    p {
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    h4 {
+        @include openSans($black, 700, 24px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        list-style:disc;
+
+        margin-left: 10px;
+    }
+
+    a {
+        color: $blue;
+    }
+}
+
+.systems__sidebar {
+    ul {
+        li.active {
+            background-color: $white;
+            border: 2px $black solid;
+            padding: 30px;
+            @include openSans($black, 600, 24px);
+            border-bottom: transparent;
+            border-right: transparent;
+            &:last-child {
+                border-bottom: 2px $black solid;
+            }
+        }
+    }
+}
+
+
+
+.systems__question.active {
+    background-color: $white;
+    display: block;
+    padding: 40px 57px;
+    border: 2px $black solid;
+    @include openSans($black, 600, 20px);
+    p {
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    h4 {
+        @include openSans($black, 700, 24px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        list-style:disc;
+
+        margin-left: 10px;
+    }
+}
+
+
+
+.systems__main-block.active {
+
+    p {
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    h4 {
+        @include openSans($black, 700, 24px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    li {
+        list-style:disc;
+
+        margin-left: 10px;
+    }
+}
+
+.systems__documentation.active {
+    background-color: $white;
+    display: block;
+    padding: 40px 57px;
+    border: 2px $black solid;
+    @include openSans($black, 600, 20px);
+    height: 340px;
+
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.systems__login.active {
+    background-color: $white;
+    display: block;
+    padding: 40px 57px;
+    border: 2px $black solid;
+    @include openSans($black, 600, 20px);
+    height: 500px;
+    width: 100%;
+
+    a {
+        color: $blue;
+        text-decoration:underline;
+    }
+}
+
+.data_base.active {
+    background-color: $white;
+    display: block;
+    padding: 40px 57px;
+    border: 2px $black solid;
+    @include openSans($black, 600, 20px);
+}
+
+
+
+
+
+.systems__img {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 330px;
+    }
+}

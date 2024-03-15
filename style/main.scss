@@ -1,0 +1,28 @@
+@import "./variables/fonts";
+@import './variables/colors';
+@import './reset';
+@import "./mixin/btn";
+@import "./mixin/newsCard";
+
+//BLOCKS
+@import "./blocks/navigation";
+@import "./blocks/header";
+@import "./blocks/news";
+@import "./blocks/tabs";
+@import "./blocks/technologies";
+@import "./blocks/program";
+@import "./blocks/zkh";
+@import "./blocks/footer";
+
+body {
+    @include openSans($black, 600, 32px);
+}
+
+.container {
+	max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}

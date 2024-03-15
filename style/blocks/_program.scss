@@ -1,0 +1,25 @@
+.po {
+    margin-top: 120px;
+    background-color: #F1F3F6;
+    padding: 100px;
+    
+    ul {
+        li {
+            margin-bottom: 15px;
+            display: flex;
+            background-color: $white;
+            justify-content: space-between;
+            padding: 10px 36px;
+            @include openSans($black, 600, 24px);
+            transition: all 0.5s ease-in-out;
+
+            a {
+                transition: all 0.5s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

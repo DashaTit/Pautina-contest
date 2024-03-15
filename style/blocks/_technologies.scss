@@ -1,0 +1,47 @@
+.technologies__card {
+    display: flex;
+    flex-direction: column;
+
+
+    img {
+        width: 450px;
+    }
+
+    transition: 0.5s; /* Время эффекта */
+        
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+    button {
+        margin-top: -60px;
+        @include blueBtn();
+        opacity: 0.9;
+        width: 450px;
+        @include openSans($white, 600, 20px);
+        padding: 15px;
+        border-radius: 0%;
+
+    }
+}
+
+.technologies {
+    div {
+        h5 {
+            @include openSans($black, 400, 24px);
+            margin-bottom: 30px;
+        }
+    
+        h1 {
+            margin-bottom: 100px;
+            padding-top: 120px;
+        }
+    }
+}
+
+.cards__1 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+@mixin newsCard($width) {
+    width: $width;
+    height: 500px;
+
+    display: inline-block; 
+    overflow: hidden;
+
+    div {
+        border: 1px solid $dark-grey;
+        border-top: none;
+        padding: 20px;
+        border-radius: 0px, 10px, 10px
+    }
+
+    img {
+        transition: 0.5s; /* Время эффекта */
+        display: block;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
