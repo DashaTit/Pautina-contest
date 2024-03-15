@@ -53,3 +53,66 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    footer {
+        margin-top: 120px;
+        background-color: $blue;
+        @include openSans($white, 600, 16px);
+    }
+
+    .footer_logo {
+        img {
+            margin-bottom: 45px;
+            width: 200px;
+        }
+        .footer_icons {
+            img {
+                width: 40px;
+            }
+        }
+    }
+
+    .footer_contacts {
+        ul {
+            li:first-child {
+                @include openSans($white, 700, 16px);
+                margin-bottom: 10px;
+            }
+    
+            li {
+                margin-bottom: 5px;
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    color: $light-grey;
+                }
+            }
+        }
+    }
+
+    .footer_menu {
+        ul {
+            li:first-child {
+                @include openSans($white, 700, 16px);
+                margin-bottom: 10px;
+            }
+    
+            li {
+                margin-bottom: 5px;
+    
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    color: $light-grey;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer__flex {
+        display: block;
+    }
+}

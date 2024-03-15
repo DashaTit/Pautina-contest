@@ -45,3 +45,104 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width: 1300px){
+    .technologies__card {
+        display: flex;
+        flex-direction: column;
+    
+    
+        img {
+            width: 350px;
+        }
+    
+        transition: 0.5s; /* Время эффекта */
+            
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+    
+        button {
+            margin-top: -53px;
+            @include blueBtn();
+            opacity: 0.9;
+            width: 350px;
+            @include openSans($white, 600, 16px);
+            padding: 15px;
+            border-radius: 0%;
+    
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards__1 {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .technologies__card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    
+    
+        img {
+            width: 450px;
+        }
+    
+        transition: 0.5s; /* Время эффекта */
+            
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+    
+        button {
+            margin-top: -53px;
+            @include blueBtn();
+            opacity: 0.9;
+            width: 450px;
+            @include openSans($white, 600, 16px);
+            padding: 15px;
+            border-radius: 0%;
+    
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .technologies__card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    
+    
+        img {
+            width: 270px;
+        }
+    
+        transition: 0.5s; /* Время эффекта */
+            
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+    
+        button {
+            margin-top: -40px;
+            @include blueBtn();
+            opacity: 0.9;
+            width: 270px;
+            @include openSans($white, 600, 12px);
+            padding: 10px;
+            border-radius: 0%;
+    
+        }
+    }
+}

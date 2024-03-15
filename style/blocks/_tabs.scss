@@ -133,7 +133,6 @@
     padding: 40px 57px;
     border: 2px $black solid;
     @include openSans($black, 600, 20px);
-    height: 340px;
 
     p {
         margin-bottom: 40px;
@@ -146,7 +145,6 @@
     padding: 40px 57px;
     border: 2px $black solid;
     @include openSans($black, 600, 20px);
-    height: 500px;
     width: 100%;
 
     a {
@@ -173,5 +171,263 @@
 
     img {
         width: 330px;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+
+    .systems__question.active {
+        background-color: $white;
+        display: block;
+        padding: 30px 40px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 16px);
+        p {
+            text-align: left;
+            margin-top: 100px;
+        }
+    
+        h4 {
+            @include openSans($black, 700, 18px);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        li {
+            list-style:disc;
+    
+            margin-left: 10px;
+        }
+    }
+
+    .systems__sidebar {
+        ul {
+            li {
+                background-color: $white;
+                padding: 20px;
+                @include openSans($dark-grey, 600, 20px);
+                border: 2px $blue solid;
+                border-bottom: transparent;
+                transition: all 0.3s ease-in-out;
+                &:last-child {
+                    border-bottom: 2px $blue solid;
+                }
+    
+                &:hover {
+                    @include openSans($black, 600, 20px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .systems__main-block.active {
+
+        p {
+            text-align: left;
+            margin-top: 100px;
+        }
+    
+        h4 {
+            @include openSans($black, 700, 20px);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        li {
+            list-style:disc;
+    
+            margin-left: 10px;
+        }
+    }
+
+
+    .data_base.active {
+        background-color: $white;
+        display: block;
+        padding: 40px 57px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 20px);
+    }
+    
+    
+    
+    
+    
+    .systems__img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        img {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .systems__section-flex {
+        display: block;
+    }
+
+    .systems__signup.active {
+        background-color: $white;
+        display: block;
+        padding: 20px 30px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 16px);
+        p {
+            text-align: left;
+            margin-top: 100px;
+        }
+    
+        h4 {
+            @include openSans($black, 700, 16px);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        li {
+            list-style:disc;
+    
+            margin-left: 10px;
+        }
+    
+        a {
+            color: $blue;
+        }
+    }
+
+    .systems__documentation.active {
+        background-color: $white;
+        display: block;
+        padding: 20px 30px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 12px);
+    
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    .systems__question.active {
+        background-color: $white;
+        display: block;
+        padding: 10px 20px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 12px);
+        p {
+            text-align: left;
+            margin-top: 100px;
+        }
+    
+        h4 {
+            @include openSans($black, 700, 16px);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        li {
+            list-style:disc;
+    
+            margin-left: 10px;
+        }
+    }
+
+    .systems__sidebar {
+        ul {
+            li {
+                background-color: $white;
+                padding: 20px;
+                @include openSans($dark-grey, 600, 16px);
+                border: 2px $blue solid;
+                border-bottom: transparent;
+                transition: all 0.3s ease-in-out;
+                &:last-child {
+                    border-bottom: 2px $blue solid;
+                }
+    
+                &:hover {
+                    @include openSans($black, 600, 16px);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .systems__main-block.active {
+
+        p {
+            text-align: left;
+            margin-top: 100px;
+        }
+    
+        h4 {
+            @include openSans($black, 700, 16px);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        li {
+            list-style:disc;
+    
+            margin-left: 10px;
+        }
+    }
+
+
+    .data_base.active {
+        background-color: $white;
+        display: block;
+        padding: 40px 57px;
+        border: 2px $black solid;
+        @include openSans($black, 600, 16px);
+    }
+    
+    
+    
+    
+    
+    .systems__img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        img {
+            width: 200px;
+        }
+    }
+}
+
+
+.systems__sidebar.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .systems__sidebar {
+        display: none;
+    }
+    .systems__sidebar.mobile {
+        display: block;
+
+        ul {
+            
+            li {
+                background-color: $white;
+                padding: 10px;
+                @include openSans($dark-grey, 600, 16px);
+                border: 2px $blue solid;
+                border-bottom: transparent;
+                transition: all 0.3s ease-in-out;
+                &:last-child {
+                    border-bottom: 2px $blue solid;
+                }
+    
+                &:hover {
+                    @include openSans($black, 600, 16px);
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }

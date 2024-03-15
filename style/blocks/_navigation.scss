@@ -120,3 +120,28 @@ nav {
 }
 
 
+@media screen and (max-width: 500px){
+    .nav__up {
+        display: block;
+    }
+
+    .nav__item:not(:first-child) {
+        margin-top: 30px;
+        @include openSans($black, 600, 16px);
+    }
+
+    .nav__down {
+        display: block;
+        @include openSans($black, 600, 16px);
+    }
+    
+    .nav__links-item:not(:first-child) {
+        margin-top: 10px;
+        margin-right: 60px;
+        transition: all 0.3s ease-in-out;
+    
+        &:hover {
+            color: $blue;
+        }
+    }
+}

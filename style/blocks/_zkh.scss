@@ -45,3 +45,112 @@
 
     }
 }
+
+@media screen and (max-width: 1290px) {
+    .zkh__card {
+        background-color: $grey;
+        width: 600px;
+        padding: 60px 40px;
+        transition: all 0.5s ease-in-out;
+        .zkh__card-header {
+            display: flex;
+            align-items: center;
+            
+            img {
+                margin-right: 45px;
+            }
+    
+            p {
+                @include openSans($black, 600, 24px);
+                margin-top: 0px;
+            }
+        }
+    
+        p {
+            margin-top: 45px;
+            @include openSans($black, 600, 20px);
+        }
+    
+        &:hover {
+            background-color: #E8F1FF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+    
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .zkh__card {
+        background-color: $grey;
+        width: 500px;
+        padding: 60px 40px;
+        margin-right: 10px;
+        transition: all 0.5s ease-in-out;
+        .zkh__card-header {
+            display: flex;
+            align-items: center;
+            
+            img {
+                width: 50px;
+                margin-right: 45px;
+            }
+    
+            p {
+                @include openSans($black, 600, 18px);
+                margin-top: 0px;
+            }
+        }
+    
+        p {
+            margin-top: 45px;
+            @include openSans($black, 600, 16px);
+        }
+    
+        &:hover {
+            background-color: #E8F1FF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+    
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .zkh__line {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .zkh__card {
+        margin-top: 10px;
+        background-color: $grey;
+        width: 300px;
+        padding: 20px 20px;
+        margin-right: 10px;
+        transition: all 0.5s ease-in-out;
+        .zkh__card-header {
+            display: flex;
+            
+            align-items: center;
+            
+            img {
+                width: 40px;
+                margin-right: 20px;
+            }
+    
+            p {
+                @include openSans($black, 600, 16px);
+                margin-top: 0px;
+            }
+        }
+    
+        p {
+            margin-top: 45px;
+            @include openSans($black, 600, 16px);
+        }
+    
+        &:hover {
+            background-color: #E8F1FF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+    
+        }
+    }
+}

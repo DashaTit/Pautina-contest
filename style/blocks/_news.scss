@@ -58,3 +58,60 @@ button {
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .news__card {
+        @include newsCard(720px);
+        margin-right: 10px;
+    }
+
+    .card-2 {
+        @include newsCard(350px)
+    }
+
+    .news__see-all {
+        height: 300px;
+        width: 350px;
+        background-color: $blue;
+        display: flex;
+        align-items: end;
+        border-radius: 10px;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+        border: 2px $blue solid;
+    
+        p {
+            width: 220px;
+            @include openSans($white, 700, 20px);
+            transition: all 0.5s ease-in-out;
+        }
+    
+        &:hover {
+            background-color: $white;
+            p {
+                color: $blue;
+            }
+        }
+    }
+
+    button {
+        margin-top: 26px;
+        @include whiteBtn();
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .news__line-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        @include openSans($black, 700, 24px);
+        margin-bottom: 100px;
+    }
+}
